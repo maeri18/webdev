@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebDev1 Week 5</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--id are unique to each element-->
+        <div id="flag-wrapper">
+        <div id="flag-top" class="flag-section" style="width : 200px; height:50px;" ></div>
+        <div id="flag-middle" class="flag-section" style="width : 200px; height:50px;"></div>
+        <div id="flag-bottom" class="flag-section" style="width : 200px; height:50px;"></div>
+        </div>
+        <p id="intro-text">Some text...</p>
+        <div id="district-wrapper">
+            <h1>Districts of Luxembourg</h1>
+            <h2>Dierkich District</h2>
+            <ul>
+                <li>Dierkich</li>
+                <li>Redange</li>
+                <li>Clervaux</li>
+                <li>Redange</li>
+                <li>Vianden</li>
+                <li>Wiltz</li>
+            </ul>
+            <h2>Grevenmacher District</h2>
+            <ul>
+                <li>Grevenmacher</li>
+                <li>Echternacht</li>
+                <li>Remich</li>
+            </ul>
+            <h2>Luxembourg District</h2>
+            <ul>
+                <li>Luxembourg</li>
+                <li>Esch-sur-Alzette</li>
+                <li>Capellen</li>
+                <li>Mersch</li>
+            </ul>
+        </div>
+        <form id="custom-form">
+            <!-- To have many classes, use one attribute class, and list the classes as values of that attribute, separated with blanks-->
+            <input class="query-input empty-input" placeholder="Enter your query here" id="my-text-input" type="text" />
+            <input  type="submit" value="search">
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+LACONSTANTE = 'nn';

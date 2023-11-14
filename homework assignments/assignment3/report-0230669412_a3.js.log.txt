@@ -1,0 +1,16 @@
+WebDevVM> Coding grade: 10
+
+[PASS] Throws SyntaxError if no invoice is provided.
+[PASS] Throws SyntaxError if no coverage percentage is provided.
+[PASS] Throws Error if no invoice ID is provided.
+[PASS] Throws Error if no invoice amount is provided.
+[PASS] Throws TypeError if invoice amount is less than 0.
+[PASS] Throws TypeError if coverage percentage is not a number.
+[PASS] Throws RangeError if coverage percentage is less than 0.
+[PASS] Throws RangeError if coverage percentage is greater than 100.
+[PASS] Applies a 50% coverage for any valid invoice amount.
+[PASS] Does not mutate the original invoices.
+10/10 tests passed (0 errors)
+
+WebDevVM> The comment density is 0.36, so your code is very well commented, good job! Bonus: 0.5 pt
+WebDevVM> Your final grade is 10.5

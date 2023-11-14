@@ -1,0 +1,19 @@
+.flag-section{
+    background-color: rgb(255, 142, 202);
+}
+body
+{
+    background-color:pink ;
+}
+/*
+#district-wrapper li { 
+    font-style: italic;
+}*/
+
+.query-input{
+    font-size : 28px;
+}
+
+.empty-input{
+    background:rgb(243, 147, 147);
+}

@@ -1,0 +1,19 @@
+WebDevVM> Coding grade: 10
+
+[PASS] Driver P3T3R parks car LA0910 on 2022-11-20 at 14:30:00 (GMT+0).
+[PASS] Driver LUK4Z parks car DC2014 on 2022-11-20 at 15:45:00 (GMT+0).
+[PASS] Driver P3T3R cannot park another car until car DC2014 is unparked.
+[PASS] There are two parked cars: LA0910 and DC2014.
+[PASS] Unpark car DC2014 on 2022-11-21 at 12:30:00 (GMT+0).
+[PASS] There is now one parked car: LA0910.
+[PASS] Driver LUK4Z parks car SP0101 on 2022-11-21 at 16:00:00 (GMT+0).
+[PASS] Driver P3T3R is not allowed to park another car.
+[PASS] There are two parked cars now: LA0910 and SP0101.
+[PASS] Compute history of driver LUK4Z.
+[PASS] Allow driver BBB999 to park car DC2014 on 2022-11-20 at 22:00:00 (GMT+0).
+[PASS] Compute history of car DC2014.
+[PASS] Compute number of parking hours (a number with 2 decimal places).
+13/13 tests passed (0 errors)
+
+WebDevVM> The comment density is 0.32, so your code is very well commented, good job! Bonus: 0.5 pt
+WebDevVM> Your final grade is 10.5

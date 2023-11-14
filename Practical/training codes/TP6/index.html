@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Webdev week 6
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        
+        <div class = "post-wrapper">
+            <h1 class ="post-title">New Post Title</h1>
+            <div class="post-date">Tue, 7, Nov</div>
+            <div class="post-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar pellentesque lacus vel congue. 
+                    Sed et arcu quis ligula laoreet tempor et non odio. Donec eget libero eu lectus ultricies volutpat vel malesuada erat.
+                     Suspendisse dapibus malesuada elit, in condimentum elit feugiat nec. Mauris rutrum, enim ut suscipit tincidunt,
+                      urna orci iaculis diam, id pulvinar enim enim sed tortor. 
+                    Duis congue tincidunt magna, at ultrices risus. Duis eget tempor risus. Aenean vel convallis nisi, sit amet varius mi.
+                </p>
+                <p>
+                    Morbi sit amet feugiat tellus. Curabitur vitae purus at massa eleifend tincidunt nec non felis. 
+                    Phasellus tincidunt, sapien rutrum hendrerit maximus, elit risus luctus ipsum, non accumsan odio justo at leo.
+                     Ut aliquet malesuada nisi, et imperdiet metus congue sit amet. Duis volutpat tortor nibh, et bibendum metus finibus
+                      quis. Pellentesque eget aliquam metus. Pellentesque cursus pulvinar tortor, ac luctus massa fringilla et.
+                       Duis egestas lacus est, in suscipit diam blandit aliquam. Nam id nulla ac justo eleifend dapibus aliquam et purus. 
+                       Maecenas ipsum neque, dictum id gravida a, vehicula quis sapien.
+                     Suspendisse aliquet cursus purus quis fringilla. Morbi at risus id mi interdum ultricies sit amet id mi.
+                </p>
+            </div>
+        </div>
+        <input  type="button" value="first button" onclick='alert("First button has been clicked");'/>It is not a good practice to insert jS in html
+        <input id="second-button" type="button" value="Second button"/> 
+        <input id="third-button" type="button" value="Third button"/>
+        <div>
+            <div><label for="post-title-input">Title:</label><input id="post-title-input" type="text"/></div>
+            <div><label for="post-date-input">Date:</label><input id="post-date-input" type="text"/></div>
+            <div><textarea id="post-body-input" placeholder="Write what you think" cols="50" rows="15">JeSuS iS KiNG</textarea></div>
+            <div><input id="post-it-button" type="button" value="Post it!"/></div>
+        </div> 
+        <script src="script.js"></script>
+    </body>
+</html>

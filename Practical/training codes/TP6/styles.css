@@ -1,0 +1,18 @@
+.post-wrapper{
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+}
+.post-title{
+    color: darkgreen;
+    text-align: center;
+
+}
+.post-date {
+    text-align: center;
+    color: darkblue;
+    font-size: 12px;
+}
+.pot-body{
+    white-space: inherit;
+}

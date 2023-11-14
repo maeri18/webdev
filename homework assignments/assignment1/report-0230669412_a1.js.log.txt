@@ -1,0 +1,9 @@
+WebDevVM> Coding grade: 10
+
+[PASS] The number of zeros is 186.
+[PASS] The number of obstacles is 975.
+[PASS] The entries where M_ij >= 2 have doubled those values.
+3/3 tests passed (0 errors)
+
+WebDevVM> The comment density is 0.50, so you did an amazing job, awesome! Bonus: 1 pt
+WebDevVM> Your final grade is 11

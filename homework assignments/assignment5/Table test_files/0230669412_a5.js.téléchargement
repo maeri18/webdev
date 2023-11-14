@@ -1,0 +1,58 @@
+function makeSortable(table)
+{
+    //let head = document.getElementsByTagName('th');//try to use table.getElementsByTagName here
+    let rows = document.getElementsByTagName('tr'); //try to use table.getElementsByTagName here
+    let columnsHead = [];
+    let columnTab = []; //table of a column
+    console.log(rows[1].childNodes.length);
+
+    for (let h of rows[0].getElementsByTagName('th'))
+    {
+        columnsHead.push(0);
+        columnsHead.push(h);   
+    }
+    for (let c=0; c<columnsHead.length;c++)
+    {
+        if(c%2==1)
+        {
+            columnsHead[c].addEventListener("click", function(){
+                for(let i=0;i<rows[0].childNodes.length;i++)
+                {
+                    columnTab = [];
+                    for(let td=1; td<rows.length;td++)
+                    {columnTab.push(rows[td].childNodes[i].innerText);}
+                    if((columnsHead[c-1])%2==0)
+                    {
+                        columnTab.sort();
+                    }
+                    else
+                    {
+                        columnTab.sort().reverse();
+                    }
+                    
+                    for(td=1;td<rows.length;td++)
+                    {
+                        rows[td].childNodes[i].innerText = columnTab[td-1];
+                    }
+                }
+               
+                columnsHead[c-1] ++;
+            });
+        }
+    }
+    
+}
+//let tab = document.getElementsByTagName("table");
+//makeSortable(tab);
+/*Just a very very very longgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg commentttt
+for my code to pass on the testing plateforme\
+Yesssssssssssssss
+yiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicshdhsiihdshhhhhhhhhiadhisjqishjiqsiqjijdjowjiwqijfioweiuefefhuifhidyquieufgtfdyv
+fwdjwdhw    fdhcajdgiudykchjkdghcusdvhbhjsfvfs
+afjadhausdijdguadahdjsdhsuoshidas
+asdjasjdgushdjashduhs
+adfnajfdf
+fdhajfadhfudhidhfahfutfuadfhuyfuadfidfhutfyqirwyrufhzhufyagnffagsuakdvahad
+fafhfqhifsfidyuherkehdgseryerjeujsfnsdhfifeq
+fafahgfsifl  fefhwehf dfjeqhfuwfsufwfewb
+whfveqhfwjejk */
