@@ -1,0 +1,68 @@
+/*it is not a good practice to refer to the tag name to modify an element. It may be ok in some cases tho.*/
+div 
+{ 
+    background : yellow;
+    width:350px;
+    height:350px;
+    text-align:  center;
+    border-style: solid;
+    border: 20px;
+}
+
+form { /*it is not a good practice to refer to the tag name to modify an element. It may be ok in some cases tho.*/
+    background :red;
+    width : 250px;
+    height : 250px;
+    text-align:  center;
+    border-style: solid;
+    border: 20px;
+}
+p { /*it is not a good practice to refer to the tag name to modify an element. It may be ok in some cases tho.*/
+    background :green;
+    width : 50px;
+    height : 50px;
+    text-align:  center;
+    border-style: solid;
+    border: 20px;
+}
+#p2
+{
+    background :green;
+    width : 50px;
+    height : 50px;
+    text-align:  center;
+    border-style: solid;
+    border: 20px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    
+}
+
+.white {
+    background-color: white;
+}
+
+.black, .white {
+    text-align: center;
+    width :50px;
+    height: 50px;
+}
+#chessboard {
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(80, 9, 64);
+}
+.selected.white{
+    border-color: rgb(195, 138, 248);
+    border-radius: 3px;
+    border-style:solid;
+}
+.selected.black{
+    border-color: blueviolet;
+    border-radius: 3px;
+    border-style:solid;
+
+}

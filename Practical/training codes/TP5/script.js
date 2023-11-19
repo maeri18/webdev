@@ -81,7 +81,7 @@ let theform = document.querySelectorAll("#search form");
 to find the first input in that form :
 theform.querySelector("input");
 
-tof ind the last input in that form:
+to find the last input in that form:
 let allinputs = theform.querySelectorAll("input")
 let last = allinputs[allinputs.length -1] ;
 */

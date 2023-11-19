@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Web development 1 - Week 07</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <div onclick="alert('DIV')">
+            DIV
+            <form onclick="alert('FORM')">
+                FORM
+                <p onclick="alert('P')">P</p> <!-- when we click on the p element, P, FORM, and DIV are alerted. This is called bubbling. We can stop it using event.st -->
+                <p onclick=event.stopPropagation() id="p2">P2</p>  <!-- lorsqu'on stoppe la propagation, on ne peut plus utiliser l'event pour l'element. 
+                    Dans ce cas, on ne peut pas appliquer un onclick="alert('Le test')", si il y a déjà un onclick=event.stopPropagation(), car si on
+                    rajoute un onclick="alert('Le test')" dans la balise <p>; seul le premier onclick sera considéré -->
+            </form>
+        </div>
+        <hr>
+        <table id="chessboard">
+            <tbody>
+                <tr>
+                    <td class="black">R</td> <!-- add many classes to an element, just separate them with spaces. Ex : class="black selected" for classes "black" and "selected" -->
+                    <td class="white">N</td>
+                    <td class="black">B</td>
+                    <td class="white">Q</td>
+                    <td class="black">K</td>
+                    <td class="white">B</td>
+                    <td class="black">N</td>
+                    <td class="white">R</td>
+                </tr>
+                <tr>
+                    <td class="white">P</td>
+                    <td class="black">P</td>
+                    <td class="white">P</td>
+                    <td class="black">P</td>
+                    <td class="white">P</td>
+                    <td class="black">P</td>
+                    <td class="white">P</td>
+                    <td class="black">P</td>
+                </tr>
+                <tr>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                </tr>
+                <tr>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                </tr>
+                <tr>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                </tr>
+                <tr>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                    <td class="white"></td>
+                    <td class="black"></td>
+                </tr>
+                <tr>
+                    <td class="black">p</td>
+                    <td class="white">p</td>
+                    <td class="black">p</td>
+                    <td class="white">p</td>
+                    <td class="black">p</td>
+                    <td class="white">p</td>
+                    <td class="black">p</td>
+                    <td class="white">p</td>
+                </tr>
+                <tr>
+                    <td class="white">r</td>
+                    <td class="black">n</td>
+                    <td class="white">b</td>
+                    <td class="black">k</td>
+                    <td class="white">q</td>
+                    <td class="black">b</td>
+                    <td class="white">n</td>
+                    <td class="black">r</td>
+                </tr>
+            
+            </tbody>
+            
+        </table>
+        <hr>
+        <a href="https://www.uni.lu/en/" target="_blank" onclick="return false">Click here</a>
+        <a id="a_href" href="https://www.uni.lu/en/" target="_blank" onclick="return false">Click here2</a>
+        <a href="https://www.uni.lu/en/" target="_blank" onclick="event.preventDefault()">Click here3</a>
+        <a href="https://www.uni.lu/en/" target="_blank" >Click here4</a>
+        <script src="script.js"></script>
+    </body>
+</html>
